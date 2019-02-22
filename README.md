@@ -1,5 +1,6 @@
 # AS7265x-spectrometer
 Python module to drive the SparkFun Triad Spectroscopy Sensor
+https://www.sparkfun.com/products/15050
 
 ## Board physical properties
 
