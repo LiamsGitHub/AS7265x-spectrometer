@@ -10,6 +10,10 @@ The 3 on-board LEDs peak at ~400nm, 475nm and 875nm. The built-in calibration sh
 
 ![alt text](https://i.postimg.cc/T3DrFKcw/spectrum.png)
 
+Running outside in California on a sunny day in February:
+
+![alt text](https://i.postimg.cc/rp2155rT/Dawnto-Dusk-CAL.png)
+
 ## Use
 
 Python 2.7 for Raspberry Pi 3B
