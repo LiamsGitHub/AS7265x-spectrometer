@@ -7,7 +7,7 @@ The board consists of 3 devices, each with 6 sensors with passbands ranging from
 As can be seen from the diagram, the passbands overlap. The sensors names (A-F, G-L, R-W) and their pass frequencies are therefore somewhat jumbled, especially between the ’51 and ’52.
 The 3 on-board LEDs peak at ~400nm, 475nm and 875nm. The built-in calibration should be used to optimize the sensor frequency response for the passband of interest.
 
-![alt text](https://i.postimg.cc/rmySQ4w2/logos.png)
+![alt text](https://i.postimg.cc/T3DrFKcw/spectrum.png)
 
 ## Use
 
@@ -18,29 +18,33 @@ test.py instantiates the module and demonstrates use of members.
 ## APIs implemented
 
 - init()
+'''
 Initialize board with default settings (factory reset)
 Input variables: none
 Legal input values: none
 Returns: none
-
+'''
 - boardPresent()
+'''
 Return device present or not
 Input variables: none
 Legal input values: none
 Returns: Boolean. True, False
-
+'''
 - hwVersion()
+'''
 Return system hardware version
 Input variables: none
 Legal input values: none
 Returns: tuple of ints (device type, hardware version)
-
+'''
 - temperatures()
+'''
 Return current temperatures of all 3 devices as a list
 Input variables: none
 Legal input values: none
 Returns: [int, int, int]
-
+'''
 - setBlueLED(state)
 Set master blue LED state (device 1 on IND line)
 Input variables: state (Bool)
