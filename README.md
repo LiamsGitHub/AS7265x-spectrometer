@@ -9,13 +9,13 @@ The 3 on-board LEDs peak at ~400nm, 475nm and 875nm. The built-in calibration sh
 
 ![alt text](https://i.postimg.cc/rmySQ4w2/logos.png)
 
-##Use
+## Use
 
 Python 2.7 for Raspberry Pi 3B
 
 test.py instantiates the module and demonstrates use of members.
 
-##APIs implemented
+## APIs implemented
 
 - init()
 Initialize board with default settings (factory reset)
