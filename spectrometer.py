@@ -192,7 +192,7 @@ def swVersion():
 # Legal input values:
 # Returns: [int, int, int]
 def temperatures():
-	devices = ["AS72651", "AS72652", "AS72653"]
+	devices = ["AS72653", "AS72652", "AS72651"]
 	temps = []
 	for device in devices:
 		setDEVSEL(device)
@@ -253,7 +253,7 @@ def shutterLED(device,state):
 # Returns: Bool. True if OK.
 def setLEDDriveCurrent(current):
 
-	devices = ["AS72651", "AS72652", "AS72653"]
+	devices = ["AS72653", "AS72652", "AS72651"]
 	
 	if current not in [0, 1, 2, 3]:
 		print ("Illegal current setting")
@@ -275,7 +275,7 @@ def setLEDDriveCurrent(current):
 # Returns: Bool. True if OK.
 def setIntegrationTime(time):
 
-	devices = ["AS72651", "AS72652", "AS72653"]
+	devices = ["AS72653", "AS72652", "AS72651"]
 	
 	if time not in range(0,255):
 		print ("Illegal integration time setting")
@@ -298,7 +298,7 @@ def setIntegrationTime(time):
 # Returns: Bool. True if OK.
 def setGain(gain):
 
-	devices = ["AS72651", "AS72652", "AS72653"]
+	devices = ["AS72653", "AS72652", "AS72651"]
 	
 	if gain not in [0, 1, 2, 3]:
 		print ("Illegal gain setting")
@@ -326,7 +326,7 @@ def readRAW():
 
 	RAWRegisters = [(0x08, 0x09), (0x0a, 0x0b), (0x0c, 0x0d), (0x0e, 0x0f), (0x10, 0x11), (0x12, 0x13)]
 	RAWValues = []
-	devices = ["AS72651", "AS72652", "AS72653"]
+	devices = ["AS72653", "AS72652", "AS72651"]
 	
 	for device in devices:
 		setDEVSEL(device)
@@ -351,7 +351,7 @@ def readCAL():
 
 	CALRegisters = [(0x14,0x15,0x16,0x17),(0x18,0x19,0x1a,0x1b),(0x1c,0x1d,0x1e,0x1f),(0x20,0x21,0x22,0x23),(0x24,0x25,0x26,0x27),(0x28,0x29,0x2a,0x2b)]
 	CALValues = []
-	devices = ["AS72651", "AS72652", "AS72653"]
+	devices = ["AS72653", "AS72652", "AS72651"]
 	
 	for device in devices:
 		setDEVSEL(device)
